@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="shieldFill" x1="12" y1="4" x2="52" y2="60" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0E2338"/>
+      <stop offset="0.5" stop-color="#091424"/>
+      <stop offset="1" stop-color="#050B14"/>
+    </linearGradient>
+    <linearGradient id="ringStroke" x1="14" y1="12" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#34D399"/>
+      <stop offset="0.5" stop-color="#06B6D4"/>
+      <stop offset="1" stop-color="#3B82F6"/>
+    </linearGradient>
+    <linearGradient id="goldStroke" x1="36" y1="34" x2="56" y2="54" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FDE68A"/>
+      <stop offset="0.5" stop-color="#F59E0B"/>
+      <stop offset="1" stop-color="#D97706"/>
+    </linearGradient>
+    <linearGradient id="nodeFill" x1="24" y1="20" x2="40" y2="36" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FBE7B5"/>
+      <stop offset="1" stop-color="#E0A94A"/>
+    </linearGradient>
+    <clipPath id="shieldClip">
+      <path d="M32 2.5L57.5 11V28.5C57.5 42.8 47.2 54.8 32 61.2C16.8 54.8 6.5 42.8 6.5 28.5V11L32 2.5Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Shield -->
+  <path d="M32 2.5L57.5 11V28.5C57.5 42.8 47.2 54.8 32 61.2C16.8 54.8 6.5 42.8 6.5 28.5V11L32 2.5Z" fill="url(#shieldFill)"/>
+  <path d="M32 5.9L54 13.4V28.4C54 41.2 44.8 52 32 57.9C19.2 52 10 41.2 10 28.4V13.4L32 5.9Z" stroke="#2FBE92" stroke-opacity="0.45" stroke-width="1.2"/>
+
+  <g clip-path="url(#shieldClip)">
+    <!-- Subtle depth -->
+    <ellipse cx="24" cy="24" rx="26" ry="24" fill="#34D399" fill-opacity="0.08"/>
+
+    <!-- Network graph -->
+    <path d="M25.5 26.5L34.5 22.5L38 31L29.5 34.5L25.5 26.5Z" stroke="url(#nodeFill)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M29.5 34.5L38 31" stroke="url(#nodeFill)" stroke-width="1.4" stroke-linecap="round"/>
+    <circle cx="25.5" cy="26.5" r="1.9" fill="url(#nodeFill)"/>
+    <circle cx="34.5" cy="22.5" r="1.9" fill="url(#nodeFill)"/>
+    <circle cx="38" cy="31" r="1.9" fill="url(#nodeFill)"/>
+    <circle cx="29.5" cy="34.5" r="1.9" fill="url(#nodeFill)"/>
+
+    <!-- Q ring -->
+    <circle cx="30" cy="29" r="13.2" stroke="url(#ringStroke)" stroke-width="4.6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Q tail / reroute arrow -->
+  <path d="M39 38L51.5 50.5" stroke="url(#goldStroke)" stroke-width="5.2" stroke-linecap="round"/>
+  <path d="M58.6 58.6L45.4 54.6L54.6 45.4Z" fill="url(#goldStroke)" stroke-linejoin="round"/>
+</svg>
