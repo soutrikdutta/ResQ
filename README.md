@@ -14,7 +14,6 @@ By continuously learning from recurring breakdown patterns, ambient thermals, an
 ## 🌐 Live Deployments & Endpoints
 
 - **Live Production Web Application:** [https://resq-jade-ten.vercel.app](https://resq-jade-ten.vercel.app)
-- **Firebase Hosted Mirror:** [https://resq-c04f0.web.app](https://resq-c04f0.web.app)
 - **Backend API Endpoints:**
   - `POST /api/incidents` — Ingest failure reports and compute optimal backup failover.
   - `GET /api/predictive` — Retrieve live AI facility risk predictions and mitigations.
